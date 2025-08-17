@@ -196,7 +196,7 @@ export default function App(): JSX.Element
       <Header theme={theme} toggleMode={toggleMode} converted={converted} setConvert={setConvert} value={value} setValue={setValue} />
       {converted && (
         <>
-          <ul className="text-white list-none max-w-[800px] w-full mb-10">
+          <ul className="text-white list-none max-w-[800px] w-full mb-10 flex flex-col items-center">
             <Items items={items} theme={theme} value={value} />
             <CreateItem theme={theme} addItem={addItem} />
           </ul>
