@@ -35,7 +35,7 @@ export default function Header(props: IHeaderProps): JSX.Element
               <p className={`${props.theme === "dark" ? 'text-white' : 'text-black'} mr-2`}>R$</p>
               <CurrencyInput
                   value={props.value}
-                  onValueChange={(value, name, values) => props.setValue(values!.float !== null ? values!.float : 0)}
+                  onValueChange={(_value, _name, values) => props.setValue(values!.float !== null ? values!.float : 0)}
                   placeholder="0"
                   allowNegativeValue={false}
                   maxLength={17}
