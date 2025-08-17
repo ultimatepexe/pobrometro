@@ -1,4 +1,4 @@
-import { type JSX, useEffect, useState } from "react";
+import { type JSX, useState } from "react";
 import Header from "./components/Header";
 import Items from "./components/Items";
 import CreateItem from "./components/CreateItem";
