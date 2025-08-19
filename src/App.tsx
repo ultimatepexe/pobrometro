@@ -191,7 +191,7 @@ export default function App(): JSX.Element
 
   return (
     <div className={`min-h-svh md:min-h-screen flex flex-col items-center
-    ${!converted && "md:pt-32"}`}
+    ${!converted && "md:pt-[16vh]"}`}
     style={{ transition: "padding 1s ease" }}>
       <Header theme={theme} toggleMode={toggleMode} converted={converted} setConvert={setConvert} value={value} setValue={setValue} />
       {converted && (

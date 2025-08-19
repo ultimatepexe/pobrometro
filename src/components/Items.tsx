@@ -59,7 +59,7 @@ export default function Items(props: IItemsProps): JSX.Element
   return (
     <>
       {props.items.map((item) => 
-      <li key={item.id} className={`max-w-[800px] min-w-[320px] grid grid-cols-1 md:grid-cols-3 m-2 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-1000 overflow-hidden border mb-3
+      <li key={item.id} className={`max-w-[800px] min-w-[320px] grid grid-cols-1 md:grid-cols-3 m-2 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-1000 overflow-hidden border mb-2
         ${props.theme === "dark" ? 'bg-neutral-950' : 'bg-white'}
         ${props.theme === "dark" ? 'border-neutral-800' : 'border-neutral-400'}`}>
           {mobile ? (
